@@ -1,0 +1,27 @@
+package myPackage;
+
+public class BubSort {
+
+	public static void main(String[] args) 
+	{
+		int data[]= {45,67,23,88,12,17};
+		int MAX=6;
+		int temp;
+		
+		for(int i = MAX-1;i>=0;i--)
+		{
+			for(int j=0;j<i;j++)
+			{
+				if(data[j]>data[j+1])
+				{
+					temp=data[j];
+					data[j]=data[j+1];
+					data[j+1]=temp;
+				}
+			}
+		}
+		System.out.println(data);
+
+	}
+
+}

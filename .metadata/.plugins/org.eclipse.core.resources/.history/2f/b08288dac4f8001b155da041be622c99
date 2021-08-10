@@ -1,0 +1,16 @@
+package application;
+
+public class LockedMeApplication {
+	
+	public String returnSomething()
+	{
+		return "dummy";
+	}
+
+	public static void main(String[] args) 
+	{
+		
+
+	}
+
+}

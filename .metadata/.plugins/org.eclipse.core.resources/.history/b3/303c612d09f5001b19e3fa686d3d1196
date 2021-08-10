@@ -1,0 +1,37 @@
+package myPackage;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class ArrayListDemo {
+
+	public static void main(String[] args) 
+	{
+		ArrayList<String> list=new ArrayList<String>();
+		
+		list.add("sandeep");
+		list.add("mandeep");
+		list.add("kuldeep");
+		list.add("randeep");
+		list.add("sandeep");
+		list.add("sandeep");
+		
+		String name;
+		Scanner obj = new Scanner(System.in);
+		System.out.println("enter search name");
+		name=obj.next();
+		
+		Iterator<String> itr=list.iterator();
+		
+		while(itr.hasNext())
+		{
+			if(itr.next().equals(name))
+			    System.out.println("found at index "+list.indexOf(name));
+			else
+				System.out.println("not found");
+		}
+
+	}
+
+}
